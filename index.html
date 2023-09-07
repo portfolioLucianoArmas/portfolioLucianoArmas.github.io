@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Armas Luciano</title>
+</head>
+<body>
+  <div class="perspective effect-rotate-left">
+    <!-- CONTAINER -->
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <!-- HEADER -->
+          <header class="header">
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <!-- SLIDE NAV -->
+          <nav class="l-slide-nav">
+            <ul class="slide-nav">
+              <li class="is-active"><span>Home</span></li>
+              <li><span>Projects</span></li>
+              <li><span>About Me</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <!-- INTRO -->
+            <li class="l-section section section--is-active">
+              <div class="intro">
+                <div class="intro--banner">
+                  <h1>Armas Luciano</h1>
+                  <p>Enthiustiatic systems engineering student and web developer</p>
+                  <img src="./imgs/image.png" alt="Welcome!">
+                </div>
+              </div>
+            </li>
+            <!-- PROJECTS -->
+            <li class="l-section section">
+              <div class="projects">
+                <h2>Projects</h2>
+                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                  <!-- Carousel wrapper -->
+                  <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img src="./imgs/guino.png" alt="">
+                        <h2>project 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./imgs/image.png" alt="">
+                        <h2>project 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./imgs/silencioso.png" alt="">
+                        <h2>project 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                      </div>
+                      
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <!-- ABOUT AND CONTACT -->
+            <li class="l-section section">
+              <div class="about">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est et laboriosam officia sapiente adipisci modi molestiae ea inventore minus officiis.</p>
+              </div>
+              <div class="contact">
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+      <!-- OUTER NAV -->
+      <ul class="outer-nav">
+        <li class="is-active"><span>Home</span></li>
+        <li><span>Projects</span></li>
+        <li><span>About Me</span></li>
+      </ul>
+
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+  <script src="./assets/slider.js"></script>
+  <script src="./assets/scriptOuterNav.js"></script>
+  <!-- <script src="./assets/carousel.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,359 @@
+/*
+          ------------INDEX------------
+*/
+
+/*GRAL*/
+
+body {
+  background-color: orange;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.l-viewport {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+}
+
+.l-wrapper {
+  position: relative;
+  width: 1440px;
+  max-width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+
+
+
+/*HEADER*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.header--nav-toggle {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header--nav-toggle span, .header--nav-toggle::before, .header--nav-toggle::after {
+  content: "";
+  position: relative;
+  width: 16px;
+  height: 2px;
+  background-color: red;
+}
+.header--nav-toggle::before {
+  bottom: 5px;
+  width: 23px;
+}
+.header--nav-toggle::after {
+  top: 5px;
+  width: 23px;
+}
+
+
+/*SECTIONS*/
+.l-main-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.l-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.section {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s;
+}
+.section--is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  transition: opacity 0.4s ease-in-out 0.4s;
+}
+.section--next {
+  transform: translateY(-45px);
+  transition: transform 0.4s ease-in-out;
+}
+.section--prev {
+  transform: translateY(45px);
+  transition: transform 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+/*SIDE NAV*/
+
+.l-side-nav {
+  position: absolute;
+  left: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.l-side-nav::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 70%;
+  max-height: 750px;
+  background-color: #555;
+  opacity: 0.35;
+  z-index: 10;
+}
+.side-nav {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 70%;
+  max-height: 750px;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  z-index: 10;
+}
+.side-nav > li {
+  position: relative;
+  top: -5px;
+  color: #fff;
+  font-size: 6px;
+  cursor: pointer;
+}
+.side-nav > li span {
+  position: relative;
+  top: 3px;
+  left: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0;
+  visibility: hidden;
+}
+.side-nav > li::before {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 300;
+}
+.side-nav li:nth-child(1)::before {
+  content: "01";
+}
+.side-nav li:nth-child(2)::before {
+  content: "02";
+}
+.side-nav li:nth-child(3)::before {
+  content: "03";
+}
+.side-nav li:nth-child(4)::before {
+  content: "04";
+}
+.side-nav li:nth-child(5)::before {
+  content: "05";
+}
+.side-nav li.is-active {
+  color: #0f33ff;
+  transition: color 0.4s ease-in-out;
+}
+.side-nav li.is-active span {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease-in-out;
+}
+.side-nav li.is-active::before {
+  left: -33px;
+  color: #fff;
+}
+
+
+/*INTRO*/
+.intro {
+  position: relative;
+  display: flex;
+  width: 900px;
+  max-width: 75%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.intro--banner {
+  position: relative;
+  height: 475px;
+}
+.intro--banner::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: -15px;
+  right: 0;
+  height: 2px;
+  /* background-color: #282828; */
+}
+.intro--banner::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  width: 30px;
+  height: 4px;
+  /* background-color: #0f33ff; */
+}
+.intro--banner h1 {
+  position: relative;
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 1;
+}
+.intro--banner p{
+  position: relative;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+  color: #ffffffd3;
+  z-index: 1;
+}
+.intro--banner img {
+  position: absolute;
+  bottom: 0%;
+  left: -40%;
+  opacity: 0.8;
+}
+
+
+
+/*SLIDER*/
+
+
+
+
+
+/*OUTER NAV*/
+
+.outer-nav {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translateY(-50%);
+  transform-style: preserve-3d;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  visibility: hidden;
+  transition: visibility 0s 0.2s;
+}
+.outer-nav.is-vis {
+  visibility: visible;
+}
+.outer-nav--return {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  cursor: pointer;
+  z-index: 11;
+}
+.outer-nav--return.is-vis {
+  display: block;
+}
+.outer-nav > li {
+  transform-style: preserve-3d;
+  transform: translateX(350px) translateZ(-1000px);
+  font-size: 55px;
+  font-weight: 900;
+  opacity: 0;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.outer-nav > li.is-vis {
+  transform: translateX(0) translateZ(0);
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+}
+.outer-nav > li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  width: 110%;
+  height: 15px;
+  opacity: 0;
+  background-color: #0f33ff;
+}
+.outer-nav > li.is-active::before {
+  opacity: 1;
+}
+
+
+
+/*EFFECTS*/
+.effect-rotate-left .container {
+  transform-origin: 0% 50%;
+  transition: transform 0.4s;
+}
+.effect-rotate-left--animate .container {
+  transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
+  outline: 30px solid #0f33ff;
+  -webkit-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
+  -moz-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
+  -ms-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
+  -o-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
+}
+
+.perspective {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.perspective--modalview {
+  position: fixed;
+  perspective: 1500px;
+}
+
+

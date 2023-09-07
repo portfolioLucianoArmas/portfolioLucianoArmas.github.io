@@ -1,0 +1,23 @@
+[
+  {
+    "title" : "project 1",
+    "desc" : "Lorem ipsum dolor sit.",
+    "img" : "guino.png",
+    "linkGit" : "github",
+    "techUsed" : ["js", "html", "css"]
+  },
+  {
+    "title" : "project 1",
+    "desc" : "Lorem ipsum dolor sit.",
+    "img" : "guino.png",
+    "linkGit" : "github",
+    "techUsed" : ["js", "html", "css"]
+  },
+  {
+    "title" : "project 1",
+    "desc" : "Lorem ipsum dolor sit.",
+    "img" : "silencioso.png",
+    "linkGit" : "github",
+    "techUsed" : ["js", "html", "css"]
+  }
+]
