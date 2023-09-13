@@ -1,3 +1,5 @@
+import{disableSwiper, enableSwiper} from "./slider.js";
+
 const sideNav = document.querySelector(".side-nav");
 const outerNav = document.querySelector(".outer-nav");
 
@@ -8,8 +10,16 @@ export const updateNavs = (nextPos) => {
   (outerNav.querySelector(".is-active")).classList.remove("is-active");
   outerNav.children[nextPos].classList.add("is-active");
   sideNav.children[nextPos].classList.add("is-active");
-}
+  
+  let liActive = sideNav.querySelector(".is-active");
+  
 
+  if((liActive.textContent == "Projects")){
+    enableSwiper();
+  }else if (!(liActive.textContent == "Projects")){
+    disableSwiper();
+  };
+}
 
 
 

@@ -3,9 +3,19 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
 
+
+  //Effect
+  effect: 'coverflow',
+  coverflowEffect:{
+    slideShadows: false,
+    scale: 0.5,
+    modifier: 2,
+  },
+
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
@@ -15,7 +25,30 @@ const swiper = new Swiper('.swiper', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  //   draggable: true,
+  // },
+
+
+  //Allows you to navigate using the keyboard arrows
+  keyboard: {
+    enabled: true,
+  },
+
+
+  //Allows you to slide in a touch screen
+  freeMode:{
+    enabled:true,
+    sticky: true,
+    momentumVelocityRatio: 0.5,
   },
 });
+
+
+export const enableSwiper=()=>{
+  swiper.enable();
+}
+export const disableSwiper=()=>{
+  swiper.disable();
+}

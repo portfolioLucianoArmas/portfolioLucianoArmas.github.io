@@ -1,8 +1,17 @@
 /*
           ------------INDEX------------
+          1- GRAL
+          2- HEADER
+          3- NAVS
+            3.1- SIDE NAVS
+            3.2- OUTER NAVS
+          4- SECTIONS
+            4.1- INTRO
+              4.1.a- SLIDER
+          5- EFFECTS
 */
 
-/*GRAL*/
+/*1- GRAL*/
 article,
 aside,
 details,
@@ -51,7 +60,7 @@ body {
 
 
 
-/*HEADER*/
+/*2- HEADER*/
 .header {
   position: absolute;
   top: 0;
@@ -91,51 +100,9 @@ body {
 }
 
 
-/*SECTIONS*/
-.l-main-content {
-  position: relative;
-  width: 100%;
-  height: 80%;
-  margin: 0;
-  margin-top: 5%;
-  padding: 0;
-  list-style: none;
-  box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
-}
+/*3- NAVS*/
 
-.l-section {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.section {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s;
-}
-.section--is-active {
-  opacity: 1;
-  visibility: visible;
-  z-index: 1;
-  transition: opacity 0.4s ease-in-out 0.4s;
-}
-.section--next {
-  transform: translateY(-45px);
-  transition: transform 0.4s ease-in-out;
-}
-.section--prev {
-  transform: translateY(45px);
-  transition: transform 0.4s ease-in-out;
-}
-
-
-
-
-
-
-
-
-/*SIDE NAV*/
+/*3.1- SIDE NAV*/
 
 .l-side-nav {
   position: absolute;
@@ -225,72 +192,7 @@ body {
 }
 
 
-/*INTRO*/
-.intro {
-  position: relative;
-  display: flex;
-  width: 900px;
-  max-width: 75%;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.intro--banner {
-  position: relative;
-  height: 475px;
-}
-.intro--banner::before {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  left: -15px;
-  right: 0;
-  height: 2px;
-  /* background-color: #282828; */
-}
-.intro--banner::after {
-  content: "";
-  position: absolute;
-  bottom: 18px;
-  left: 0;
-  width: 30px;
-  height: 4px;
-  /* background-color: #0f33ff; */
-}
-.intro--banner h1 {
-  position: relative;
-  font-size: 68px;
-  font-weight: 900;
-  line-height: 1;
-  z-index: 1;
-}
-.intro--banner p{
-  position: relative;
-  font-size: 30px;
-  font-weight: 100;
-  line-height: 1;
-  color: #ffffffd3;
-  z-index: 1;
-}
-.intro--banner img {
-  border: 0;
-  position: absolute;
-  bottom: 0%;
-  left: 10%;
-  opacity: 0.8;
-}
-
-
-
-/*SLIDER*/
-
-
-
-
-
-/*OUTER NAV*/
+/*3.2- OUTER NAV*/
 
 .outer-nav {
   position: absolute;
@@ -366,7 +268,114 @@ body {
 
 
 
-/*EFFECTS*/
+
+/*4- SECTIONS*/
+.l-main-content {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  margin-top: 5%;
+  padding: 0;
+  list-style: none;
+  box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
+}
+
+.l-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.section {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s;
+}
+.section--is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  transition: opacity 0.4s ease-in-out 0.4s;
+}
+.section--next {
+  transform: translateY(-45px);
+  transition: transform 0.4s ease-in-out;
+}
+.section--prev {
+  transform: translateY(45px);
+  transition: transform 0.4s ease-in-out;
+}
+
+
+
+/*4.1- INTRO*/
+.intro {
+  position: relative;
+  display: flex;
+  width: 900px;
+  max-width: 75%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.intro--banner {
+  position: relative;
+  height: 475px;
+}
+.intro--banner::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: -15px;
+  right: 0;
+  height: 2px;
+  /* background-color: #282828; */
+}
+.intro--banner::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  width: 30px;
+  height: 4px;
+  /* background-color: #0f33ff; */
+}
+.intro--banner h1 {
+  position: relative;
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 1;
+}
+.intro--banner p{
+  position: relative;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+  color: #ffffffd3;
+  z-index: 1;
+}
+.intro--banner img {
+  border: 0;
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+  opacity: 0.8;
+}
+
+
+
+/*4.1.a- SLIDER*/
+
+
+
+
+
+
+
+/*5- EFFECTS*/
 .effect-rotate-left .container {
   transform-origin: 0% 50%;
   transition: transform 0.4s;
