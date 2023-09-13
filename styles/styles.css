@@ -3,8 +3,24 @@
 */
 
 /*GRAL*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
 
 body {
+  margin: 0;
   background-color: orange;
   font-size: 14px;
   line-height: 1.6;
@@ -23,6 +39,7 @@ body {
 }
 
 .l-wrapper {
+  background: red;
   position: relative;
   width: 1440px;
   max-width: 90%;
@@ -38,7 +55,7 @@ body {
 .header {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 95%;
   display: flex;
   width: 100%;
   height: 70px;
@@ -55,13 +72,14 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  
 }
 .header--nav-toggle span, .header--nav-toggle::before, .header--nav-toggle::after {
   content: "";
   position: relative;
   width: 16px;
   height: 2px;
-  background-color: red;
+  background-color: green;
 }
 .header--nav-toggle::before {
   bottom: 5px;
@@ -77,10 +95,12 @@ body {
 .l-main-content {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 80%;
   margin: 0;
+  margin-top: 5%;
   padding: 0;
   list-style: none;
+  box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
 }
 
 .l-section {
@@ -255,9 +275,10 @@ body {
   z-index: 1;
 }
 .intro--banner img {
+  border: 0;
   position: absolute;
   bottom: 0%;
-  left: -40%;
+  left: 10%;
   opacity: 0.8;
 }
 
@@ -325,8 +346,22 @@ body {
   opacity: 0;
   background-color: #0f33ff;
 }
+
 .outer-nav > li.is-active::before {
   opacity: 1;
+}
+
+.outer-nav li.is-vis:nth-child(2) {
+  transition-delay: 0.04s;
+}
+.outer-nav li.is-vis:nth-child(3) {
+  transition-delay: 0.08s;
+}
+.outer-nav li.is-vis:nth-child(4) {
+  transition-delay: 0.12s;
+}
+.outer-nav li.is-vis:nth-child(5) {
+  transition-delay: 0.16s;
 }
 
 
