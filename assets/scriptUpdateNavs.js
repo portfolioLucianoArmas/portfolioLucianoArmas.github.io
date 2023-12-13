@@ -13,7 +13,6 @@ export const updateNavs = (nextPos) => {
   
   let liActive = sideNav.querySelector(".is-active");
   
-
   if((liActive.textContent == "Projects")){
     enableSwiper();
   }else if (!(liActive.textContent == "Projects")){

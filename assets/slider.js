@@ -46,9 +46,9 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-export const enableSwiper=()=>{
+export const enableSwiper = ()=>{
   swiper.enable();
 }
-export const disableSwiper=()=>{
+export const disableSwiper = ()=>{
   swiper.disable();
 }

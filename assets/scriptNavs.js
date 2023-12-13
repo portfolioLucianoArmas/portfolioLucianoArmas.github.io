@@ -33,6 +33,9 @@ let targetElement = document.getElementById('viewport');
 let mainContent = new Hammer(targetElement);
 
 
+//Get popup container to cancel the swipe action while is active
+// const popCont = document.getElementById("popup");
+
 
 //When the web loads the swiper is disabled
 bodyElem.addEventListener("load", disableSwiper());
@@ -130,7 +133,39 @@ mainContent.on("swipeup swipedown", (e)=>{
 //-Using a keyboard (arrow keys)
 document.addEventListener("keyup", (e)=>{
   updateHelper(e);
+  // if(!(popCont.classList.contains("popup"))){
+  //   updateHelper(e);
+  // }
 })
+
+
+//-Using mousewheel
+let canScroll = true
+let scrollController = null
+document.addEventListener("wheel", (e) =>{
+  if(!(outerNav.querySelector(".is-vis"))){
+    // e.preventDefault();
+    let delta = (e.deltaY)
+
+    if(delta > 0 && canScroll){
+      canScroll = false;
+      clearTimeout(scrollController);
+      scrollController = setTimeout(function(){
+        canScroll = true;
+      }, 800);
+      updateHelper(1);
+
+    }else if(delta < 0 && canScroll){
+      canScroll = false;
+      clearTimeout(scrollController);
+      scrollController = setTimeout(function(){
+        canScroll = true;
+      }, 800);
+      updateHelper(-1);
+    }
+  }
+})
+
 
 // --Determine swipe, and arrow key direction
 const updateHelper = (e) =>{
@@ -139,59 +174,27 @@ const updateHelper = (e) =>{
   let lastPos = (Array.from(snLis).length) - 1;
   let nextPos = 0;
 
-  if (e.type === "swipeup" || e.keyCode === 40){
+  if (e.type === "swipeup" || e.keyCode === 40 || e > 0){
     if(curPos !== lastPos){
       nextPos = curPos + 1;
-    } 
-  } else if (e.type === "swipedown" || e.keyCode === 38){
+    } else if(curPos===0){
+      nextPos = lastPos;
+    }
+  } else if (e.type === "swipedown" || e.keyCode === 38 || e < 0){
     if (curPos !== 0){
       nextPos = curPos - 1;
     }
     else {
-      nextPos = lastItem;
+      nextPos = lastPos;
     }
-  } else{
+  } 
+  else{
     nextPos = curPos;
   }
   updateNavContent(nextPos);
 } 
 
 
-/*
-  // determine scroll, swipe, and arrow key direction
-  function updateHelper(param) {
-
-    var curActive = $('.side-nav').find('.is-active'),
-        curPos = $('.side-nav').children().index(curActive),
-        lastItem = $('.side-nav').children().length - 1,
-        nextPos = 0;
-
-    if (param.type === "swipeup" || param.keyCode === 40 || param > 0) {
-      if (curPos !== lastItem) {
-        nextPos = curPos + 1;
-        updateNavs(nextPos);
-        updateContent(curPos, nextPos, lastItem);
-      }
-      else {
-        updateNavs(nextPos);
-        updateContent(curPos, nextPos, lastItem);
-      }
-    }
-    else if (param.type === "swipedown" || param.keyCode === 38 || param < 0){
-      if (curPos !== 0){
-        nextPos = curPos - 1;
-        updateNavs(nextPos);
-        updateContent(curPos, nextPos, lastItem);
-      }
-      else {
-        nextPos = lastItem;
-        updateNavs(nextPos);
-        updateContent(curPos, nextPos, lastItem);
-      }
-    }
-
-  }
-  */
 
 
 

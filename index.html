@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -50,14 +51,42 @@
             <!-- PROJECTS -->
             <li class="l-section section">
               <div class="projects">
-                <h2>Projects</h2>
+                <!-- <h2>Projects</h2> -->
                 <div id="default-carousel" class="relative w-full" data-carousel="slide">
                   <!-- Carousel wrapper -->
                   <div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
+
                       <!-- Slides -->
                       <div class="swiper-slide">
+                        <img src="./imgs/anotadorTruco3.png" alt="Anotador de Truco">
+                        <div class="projInfo">
+                          <h2 class="title">Anotador de Truco</h2>
+                          <p class="description">Poiny scorer for the Truco game</p>
+                          <button class="btnInfo">XD</button>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="./imgs/anotadorTruco2.png" alt="Anotador de Truco">
+                        <div class="projInfo">
+                          <h2 class="title">Anotador de Truco 2</h2>
+                          <p class="description">Poiny scorer for the Truco game</p>
+                          <button class="btnInfo">XD</button>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="./imgs/anotadorTruco4.png" alt="Anotador de Truco">
+                        <div class="projInfo">
+                          <h2 class="title">Anotador de Truco JEJE</h2>
+                          <p class="description">Poiny scorer for the Truco game</p>
+                          <button class="btnInfo">XD</button>
+                        </div>
+                      </div>
+
+                      <!-- <div class="swiper-slide">
                         <img src="./imgs/guino.png" alt="">
                         <h2>project 1</h2>
                         <p>Lorem ipsum dolor sit.</p>
@@ -71,15 +100,17 @@
                         <img src="./imgs/silencioso.png" alt="">
                         <h2>project 1</h2>
                         <p>Lorem ipsum dolor sit.</p>
-                      </div>
+                      </div> -->
                       
                     </div>
                     <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
                   
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+
+                
                   
                     <!-- -----ELIMINAR DESDE -->
                     <!-- If we need scrollbar -->
@@ -93,12 +124,54 @@
             
             <!-- ABOUT AND CONTACT -->
             <li class="l-section section">
-              <div class="about">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est et laboriosam officia sapiente adipisci modi molestiae ea inventore minus officiis.</p>
-              </div>
-              <div class="contact">
-                <p>Lorem, ipsum dolor.</p>
-              </div>
+              <section class="aboutMe">
+                <div class="about">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est et laboriosam officia sapiente adipisci modi molestiae ea inventore minus officiis.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi magnam magni cum incidunt nesciunt, sunt voluptas cupiditate sed eaque, facilis odio error tempore, voluptate animi minus laborum architecto minima aspernatur?</p>
+                </div>
+                <div class="contact">
+                  <!-- <a class="git" href="https://github.com/LucianoArmas" target="_blank">
+                    <img src="./imgs/brand-github.svg" alt="GitHub">
+                  </a>
+                  <a class="linkedin" href="https://www.linkedin.com/in/luciano-armas-167974206/" target="_blank">
+                    <img src="./imgs/brand-linkedin.svg" alt="LinkedIn">
+                  </a> -->
+
+                  <button class="btnLinkedIn">
+                    <svg class="btnLinkedInLogo" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                      <path d="M8 11l0 5" />
+                      <path d="M8 8l0 .01" />
+                      <path d="M12 16l0 -5" />
+                      <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                    <!-- <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="btnLinkedinLogo">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg> -->
+                  </button>
+
+                  <button class="btnGit">
+                    <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="btnGitLogo">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </button>
+
+                  <button class="button" type="button">
+                    <span class="button__text">Portfolio</span>
+                    <span class="button__icon">
+                      <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line y2="13" x2="8" y1="13" x1="16"></line>
+                        <line y2="17" x2="8" y1="17" x1="16"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                    </span>
+                  </button>
+
+                </div>
+              </section>              
             </li>
           </ul>
         </div>
@@ -111,6 +184,36 @@
         <li><span>Projects</span></li>
         <li><span>About Me</span></li>
       </ul>
+      
+
+      <!-- ELIMINAR DESDE -->
+      <!-- POPUP -->
+      <!-- <div id="popup" class="hidden">
+        <div id="popupContent">
+          <div id="projectInfo">
+            
+            <div id="imgLink">
+              <img id="popImg">
+              <button id="popLink"><img src="./imgs/enlace.png"></button>
+              <button id="popGit"><img src="./imgs/github.png"></button>
+            </div>
+
+            <div id="titDesc">
+              <h2 id="popTitle"></h2>
+              <p id="popDesc"></p>
+            </div>
+          </div>
+
+          <div id="projectTechs">
+            <h3>Technologies</h3>
+            <ul id="popTechs"></ul>
+          </div>
+          <div class="btnPopUpContainer">
+            <button id="closeBtn" class="btnPopUp close">X</button>
+          </div>
+        </div>
+      </div> -->
+      <!-- ELIMINAR HASTA -->
 
     </div>
 
@@ -118,6 +221,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
   <script src="./assets/slider.js" type="module"></script>
   <script src="./assets/scriptNavs.js" type="module"></script>
-  <!-- <script src="./assets/carousel.js"></script> -->
+  <!-- <script src="./assets/carousel.js" type="module"></script> -->
 </body>
 </html>

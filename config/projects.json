@@ -3,21 +3,32 @@
     "title" : "project 1",
     "desc" : "Lorem ipsum dolor sit.",
     "img" : "guino.png",
+    "link" : "linkWeb",
     "linkGit" : "github",
     "techUsed" : ["js", "html", "css"]
   },
   {
-    "title" : "project 1",
+    "title" : "project 2",
     "desc" : "Lorem ipsum dolor sit.",
     "img" : "guino.png",
+    "link" : "linkWeb",
     "linkGit" : "github",
     "techUsed" : ["js", "html", "css"]
   },
   {
-    "title" : "project 1",
+    "title" : "project 3",
     "desc" : "Lorem ipsum dolor sit.",
     "img" : "silencioso.png",
+    "link" : "linkWeb",
     "linkGit" : "github",
     "techUsed" : ["js", "html", "css"]
+  },
+  {
+    "title" : "Anotador de Truco",
+    "desc" : "Point scorer for the Truco game",
+    "img" : "anotadorTruco3.png",
+    "link" : "https://anotadortruco.github.io",
+    "linkGit" : "https://github.com/LucianoArmas/AnotadorTruco",
+    "techUsed" : ["JS", "HTML", "CSS"]
   }
 ]
