@@ -15,9 +15,10 @@
               4.3.c- Project Info
               4.3.d- Project Techs
             4.3- ABOUT ME
-              4.3.a- Btn GitHub & LinkedIn
-              4.3.b- Btn Portfolio
-          5- EFFECTS
+              4.3.a- Btn Portfolio
+          5- BTN LOGOS
+          6- EFFECTS
+          7- RESPONSIVE DESIGN
 */
 
 /*1- GRAL*/
@@ -38,10 +39,13 @@ summary {
   display: block;
 } */
 
-body {
+body { /*FONDO*/
   display: flex;
   margin: 0;
-  background-color: #1B2432;
+  background: #1b263b;
+  /* background: #14213d; */
+  /* background: #2b2d42; */
+  /* background-color: #1B2432;  */
   font-size: 14px;
   line-height: 1.6;
   justify-content: center;
@@ -88,7 +92,7 @@ body {
 .header {
   position: absolute;
   top: 0;
-  left: 95%;
+  /* left: 95%; */
   display: flex;
   width: 100%;
   height: 70px;
@@ -105,6 +109,8 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: absolute;
+  right: 2%;
   
 }
 .header--nav-toggle span, .header--nav-toggle::before, .header--nav-toggle::after {
@@ -146,7 +152,7 @@ body {
   height: 50%;
   max-height: 750px;
   background-color: #ADB5BD;
-  opacity: 0.35;
+  opacity: 0.45;
   z-index: 10;
 }
 .side-nav {
@@ -305,7 +311,10 @@ body {
 
 
 /*4- SECTIONS*/
-.l-main-content {
+.l-main-content {/*FONDO*/
+  /* background: #1B2432; */
+  /* background: #ff6f00d7; */
+  background: #03071e; 
   position: relative;
   width: 100%;
   height: 80%;
@@ -318,8 +327,8 @@ body {
 }
 
 .l-section {
-  background: #ff6f00d7;
   position: absolute;
+  display: flex;
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -354,8 +363,9 @@ body {
 .intro {
   position: relative;
   display: flex;
-  width: 900px;
-  max-width: 75%;
+  width: 100%;
+  /* width: 900px; */
+  /* max-width: 75%; */
   height: 100%;
   flex-direction: column;
   justify-content: center;
@@ -364,7 +374,9 @@ body {
 
 .intro--banner {
   position: relative;
-  height: 475px;
+  /* height: 475px; */
+  height: 100%;
+  width: 100%;
 }
 .intro--banner::before {
   content: "";
@@ -386,30 +398,43 @@ body {
 }
 .intro--banner h1 {
   position: relative;
+  margin-top: 90px;
+  margin-bottom: 0;
+  margin-left: 15%;
   font-size: 68px;
   font-weight: 900;
   line-height: 1;
   z-index: 1;
-  color: #FCFAFA;
-  bottom: 15%;
+  color: #ff6f00d7;
+  /* color: #FCFAFA; */
+  top: 0;
+  /* bottom: 15%; */
 }
 .intro--banner p{
   position: relative;
   font-size: 30px;
   font-weight: 100;
+  margin-left: 15%;
   line-height: 1;
-  color: #DEE2E6;
+  margin-top: 0;
+  color: rgb(228, 227, 227);
+  /* color: #dee2e6d3; */
   z-index: 1;
   /* width: 1150px; */
-  bottom: 15%;
+  top: 5%;
   max-width: 800px;
 }
 .intro--banner img {
   border: 0;
   position: absolute;
-  top: 35%;
-  left: 35%;
-  opacity: 0.8;
+  bottom: 2%;
+  right: 0%;
+  left: auto;
+  width: auto;
+  height: auto;
+  /* top: 35%; */
+  /* left: 35%; */
+  opacity: 0.9;
 }
 
 
@@ -428,6 +453,13 @@ body {
   margin: 0 auto;
 }
 
+.btnTechWeb{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 
 
@@ -466,7 +498,12 @@ body {
   position: absolute;
   padding: 20px;
   text-align: center;
-  background: #415A77;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: #2b2d42;
   border: 2px solid #D6D6E7;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -475,6 +512,53 @@ body {
   -o-border-radius: 15px;
 }
 
+.projInfo h2{
+  color: #ff6f00fd;
+}
+
+.projInfo p{
+  color: #ced4da;
+  /* color: #adb5bd; */
+}
+
+.swiper-pagination-bullet{
+  background: white;
+}
+
+
+.swiperBtn{
+  width: 30px;
+  height: 45px;
+  border: 3px solid #315cfd;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1em;
+  font-weight: 550;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.swiperBtn:hover{
+  background: #315cfd;
+  color: white;
+  font-size: 1.5em;
+}
+
+
+
+.techs{
+  display: inline-block;
+  position: relative;
+  margin-left: 8px;
+  left: 0;
+}
+
+
+/* ELIMINAR DESDE??? */
 .projInfo button{
   margin-top: 20px;
   align-items: center;
@@ -520,6 +604,7 @@ body {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+/* ELIMINAR HASTA??? */
 
 
 /* ELIMINAR DESDE */
@@ -677,10 +762,13 @@ body {
 
 /*4.3- ABOUT ME */
 .aboutMe{
+  display: flex;
   position: relative;
   /* background: #000; */
-  width: 800px; /*MODIFICAR*/
+  width: 80%;
+  /*width: 800px;*/ /*MODIFICAR*/
   height: 300px;
+  justify-content: space-between;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -690,10 +778,30 @@ body {
   -o-transform: translate(-50%, -50%);
 }
 
+.infoMe{
+  width: 80%;
+  padding-right: 20px;
+}
+
+.photoMe{
+  width: 20%;
+  pointer-events: none;
+}
+
+.photoMe img{
+  width: 100%;
+  height: fit-content;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 
 .contact{
   /* background: red; */
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -704,7 +812,7 @@ body {
 
 .about{
   /* background: blue; */
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   height: 90%;
   width: 100%;
@@ -735,48 +843,31 @@ body {
 
 
 
-/*4.3.a- Btn GitHub & LinkedIn*/
-.btnGit, .btnLinkedIn{
-  background-color: transparent;
-  border: none;
-  padding-right: 40px;
-  justify-items: center;
-  align-items: center;
-}
 
 
-.btnGitLogo, .btnLinkedInLogo{
-  width: 2rem;
-  transition-duration: 200ms; 
-  height: 2rem;
-}
-
-
-.btnGitLogo:hover{
-  scale: 1.25;
-  stroke: #863bf6;
-}
-
-.btnLinkedInLogo:hover{
-  scale: 1.25;
-  stroke: #0a66c2;
-}
-
-
-
-
-/*4.3.b- Btn Portfolio*/
+/*4.3.a- Btn Portfolio*/
 .button {
   --main-focus: #2d8cf0;
-  --font-color: #323232;
-  --bg-color-sub: #dedede;
-  --bg-color: #eee;
-  --main-color: #323232;
+
+  /* --font-color: #323232; */
+  --font-color: black;
+
+  /* --bg-color-sub: #dedede; */
+  /* --bg-color-sub: #ff6f00d7; */
+  --bg-color-sub: #ff6f00;
+
+  /* --bg-color: #eee; */
+  --bg-color: #ced4da;
+
+  /* --main-color: #323232; */
+  --main-color: #495057;
+
   position: relative;
   top: -2px;
   width: 150px;
   height: 40px;
   cursor: pointer;
+  text-decoration: none;
   display: flex;
   align-items: center;
   border: 2px solid var(--main-color);
@@ -785,6 +876,23 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
+
+/* .projInfo .button{
+  left: 90%;
+  top: 65%;
+  top: 0;
+  position: relative;
+} */
+
+/* .techs{
+  background: red; 
+  display: inline-block;
+  position: relative;
+  margin-left: 8px;
+  left: 0;
+} */
+
+
 
 .button, .button__icon, .button__text {
   transition: all 0.3s;
@@ -799,17 +907,17 @@ body {
 
 .button .button__icon {
   position: absolute;
-  transform: translateX(109px);
+  transform: translateX(112px);
   height: 100%;
   width: 39px;
   background-color: var(--bg-color-sub);
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-transform: translateX(109px);
-  -moz-transform: translateX(109px);
-  -ms-transform: translateX(109px);
-  -o-transform: translateX(109px);
+  -webkit-transform: translateX(112px);
+  -moz-transform: translateX(112px);
+  -ms-transform: translateX(112px);
+  -o-transform: translateX(112px);
 }
 
 .button .svg {
@@ -826,7 +934,7 @@ body {
 }
 
 .button:hover .button__icon {
-  width: 148px;
+  width: 100%;
   transform: translateX(0);
 }
 
@@ -837,7 +945,113 @@ body {
 
 
 
-/*5- EFFECTS*/
+
+
+
+/*5- BTN LOGOS*/
+.btnLink{
+  background-color: transparent;
+  border: none;
+  margin-right: 40px;
+  justify-items: center;
+  align-items: center;
+
+  position: relative;
+  display: inline-block;
+}
+
+.techLogo{
+  justify-items: center;
+  align-items: center;
+
+  position: relative;
+  display: inline-block;
+}
+
+
+.btnLogo{
+  width: 2rem;
+  transition-duration: 200ms; 
+  height: 2rem;
+  stroke: #ced4da; /*CAMBIA EL COLOR DEL ICONO*/
+}
+
+.logoCSS:hover > .btnCSSLogo{
+  stroke: #264de4;
+  scale: 1.25;
+}
+
+.logoHTML:hover > .btnHTMLLogo{
+  scale: 1.25;
+  stroke: #e34c26;
+}
+
+.logoJS:hover > .btnJSLogo{
+  scale: 1.25;
+  stroke: #f0db4f;
+}
+
+.btnGit:hover > .btnGitLogo{
+  scale: 1.25;
+  stroke: #863bf6;
+}
+
+.btnLinkedIn:hover > .btnLinkedInLogo{
+  scale: 1.25;
+  stroke: #0a66c2;
+}
+
+.tooltip{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  background: #0b798a; /*EL COLOR DEBERIA CAMBIAR SEGUN EL COLOR DEL LOGO
+                          O TENDRIA QUE HACER UN COLOR UNICO?*/
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  transition: opacity 0.3s, visibility 0.3s, top 0.3s, background 0.3s;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #0b798a transparent;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.techLogo:hover .tooltip,.btnLink:hover .tooltip {
+  top: 120%;
+  opacity: 1;
+  visibility: visible;
+  background: #0e94a0;
+  transform: translate(-50%, -5px);
+  -webkit-transform: translate(-50%, -5px);
+  -moz-transform: translate(-50%, -5px);
+  -ms-transform: translate(-50%, -5px);
+  -o-transform: translate(-50%, -5px);
+}
+
+
+
+
+
+
+
+/*6- EFFECTS*/
 .effect-rotate-left .container {
   transform-origin: 0% 50%;
   transition: transform 0.4s;
@@ -853,6 +1067,108 @@ body {
   -moz-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
   -ms-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
   -o-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
+}
+
+
+
+
+
+/*7- RESPONSIVE DESIGN*/
+
+@media (max-width: 1100px) {
+  .intro--banner h1{
+    font-size: 50px;
+  }
+  .intro--banner p{
+    font-size: 25px;
+  }
+  .intro--banner img {
+    width: 850px;
+  }
+
+
+  .btnTechWeb{
+    display: grid;
+    justify-content: center;
+  }
+  
+  .btnTechWeb .button{
+    justify-self: center;
+  }
+
+  .techs{
+    justify-content: space-between;
+  }
+
+  .techLogo{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .tooltip{
+    top: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+  .tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #0b798a transparent transparent transparent;
+    transform: translate(-50%, 360%);
+    -webkit-transform: translate(-50%, 360%);
+    -moz-transform: translate(-50%, 360%);
+    -ms-transform: translate(-50%, 360%);
+    -o-transform: translate(-50%, 360%);
+}
+
+  .techLogo:hover .tooltip,.btnLink:hover .tooltip {
+    top: 0;
+    transform: translate(-50%, -120%);
+    -webkit-transform: translate(-50%, -120%);
+    -moz-transform: translate(-50%, -120%);
+    -ms-transform: translate(-50%, -120%);
+    -o-transform: translate(-50%, -120%);
+}
+  
+}
+
+@media (max-width: 920px){
+  
+  .intro--banner h1{
+    font-size: 45px;
+  }
+  .intro--banner p{
+    font-size: 22px;
+  }
+  
+  .intro--banner img {
+    /* width: 800px; */
+    width: 80%;
+    height: 50%;
+  }
+
+  .swiperBtn{
+    opacity: 0;
+    z-index: -10;
+  }
+
+
+}
+
+@media (max-width: 1300px) and (max-height: 800px){
+  .swiperBtn{
+    opacity: 0;
+    z-index: -10;
+  }
 }
 
 
