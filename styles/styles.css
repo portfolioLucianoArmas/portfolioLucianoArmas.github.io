@@ -768,8 +768,9 @@ body { /*FONDO*/
   width: 80%;
   /*width: 800px;*/ /*MODIFICAR*/
   height: 300px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   top: 50%;
+  justify-content: center;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -779,13 +780,14 @@ body { /*FONDO*/
 }
 
 .infoMe{
-  width: 80%;
+  width: 40%;
   padding-right: 20px;
 }
 
 .photoMe{
   width: 20%;
   pointer-events: none;
+  padding-left: 30px;
 }
 
 .photoMe img{
