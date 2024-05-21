@@ -771,6 +771,7 @@ body { /*FONDO*/
   /* justify-content: space-between; */
   top: 50%;
   justify-content: center;
+  align-content: center;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -991,6 +992,21 @@ body { /*FONDO*/
 .logoJS:hover > .btnJSLogo{
   scale: 1.25;
   stroke: #f0db4f;
+}
+
+.logoSpringBoot:hover > .btnSpringBootLogo{
+  scale: 1.25;
+  stroke: #8BC34A;
+} 
+
+.logoMySQL:hover > .btnMySQLLogo{
+  scale: 1.25;
+  stroke: #018FB4;
+}
+
+.logoBootstrap:hover > .btnBootstrapLogo{
+  scale: 1.25;
+  stroke: #6C19FF;
 }
 
 .btnGit:hover > .btnGitLogo{
