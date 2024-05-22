@@ -9,11 +9,6 @@
             4.1- INTRO
             4.2- PROJECTS
               4.2.a- SLIDER
-            4.3- POPUP <------- ELIMINAR SECCION
-              4.3.a- Gral
-              4.3.b- Btn Close
-              4.3.c- Project Info
-              4.3.d- Project Techs
             4.3- ABOUT ME
               4.3.a- Btn Portfolio
           5- BTN LOGOS
@@ -562,206 +557,6 @@ body { /*FONDO*/
 }
 
 
-/* ELIMINAR DESDE??? */
-.projInfo button{
-  margin-top: 20px;
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395A;
-  cursor: pointer;
-  display: inline-flex;
-  height: 40px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 16px;
-}
-
-
-.projInfo button:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-.projInfo button:hover {
-  box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-.projInfo button:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-/* ELIMINAR HASTA??? */
-
-
-/* ELIMINAR DESDE */
-/*4.3- POPUP*/
-/*4.3.a- Gral*/
-.popup {
-  position:fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  z-index: 100;
-}
-
-#popupContent {
-  background-color: #fff;
-  width: 40%;
-  height: 60%;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-}
-
-.hidden {
-  display: none;
-}
-
-/*4.3.b- Btn Close*/
-.btnPopUpContainer{
-  display:flex;
-  justify-content: center;
-  height: 3rem;
-  position: absolute; 
-  top: 5px; 
-  right: 5px;
-}
-
-.btnPopUp{
-  width: 2rem;
-  height: 2rem;
-  text-align: center;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-#closeBtn {
-  background: rgb(255, 47, 0);
-  color: whitesmoke;
-  margin-left: 5px;
-}
-
-#closeBtn:hover{
-  background: rgb(190, 35, 1);
-  color: whitesmoke;
-}
-
-
-
-
-/*4.3.c- Project Info*/
-
-#projectInfo{
-  color: red;
-}
-
-
-#imgLink{
-  left: 0;
-  top: 0;
-  position: relative;
-  height: 25%;
-  width: 25%;
-}
-
-#popImg{
-  height: 100%;
-  width: 100%;
-}
-
-
-#popLink, #popGit{
-  background: none;
-  height: 30px;
-  width: 40px;
-  position: absolute;
-  bottom: 0;
-  border: none; 
-}
-#popLink{
-  left: 0;
-}
-
-
-#popGit{
-  right: 0;
-}
-
-#popLink img, #popGit img{
-  height: 100%;
-  width: 100%;
-}
-
-
-#titDesc{
-  position: absolute;
-  left: 5%;
-  width: 50%;
-  text-align: start;
-  /* padding-left: 20px; */
-}
-
-
-
-
-
-
-/*4.3.d- Project Techs*/
-#projectTechs{
-  color: red;
-  position: absolute;
-  right: 30%;
-  top: 10%;
-  width: 30px;
-  height: 100%;
-}
-
-#popTechs{
-  width: 50%;
-  text-align: center;
-}
-
-#popTechs img{
-  width: 30px;
-  height: 30px;
-}
-
-#popTechs img::hover{ /*NO ME FUNCIONA*/
-  cursor: none;
-}
-
-/* ELIMINAR HASTA */
 
 
 /*4.3- ABOUT ME */
@@ -792,7 +587,7 @@ body { /*FONDO*/
 .photoMe{
   width: 20%;
   pointer-events: none;
-  padding-left: 30px;
+  padding-left: 100px;
 }
 
 .photoMe img{
@@ -825,28 +620,10 @@ body { /*FONDO*/
   width: 100%;
 }
 
-
-/*ELIMINAR DESDE*/
-.contact>.git{
-  margin-right: 20px;
-  height: 100%;
-  /* filter: invert(99%) sepia(2%) saturate(2618%) hue-rotate(118deg) brightness(111%) contrast(98%);
-  -webkit-filter: invert(99%) sepia(2%) saturate(2618%) hue-rotate(118deg) brightness(111%) contrast(98%); */
+.about p{
+  font-size: 16px;
+  color: rgb(228, 227, 227);
 }
-.contact>.linkedin{
-  margin-left: 20px;
-  margin-right: 30px;
-  height: 100%;
-}
-
-.linkedin>img, .git>img{
-  bottom: 0;
-  left: 0;
-  /* background: wheat; */
-  width: 100%;
-  height: 100%;
-}
-/*ELIMINAR HASTA*/
 
 
 
@@ -884,20 +661,6 @@ body { /*FONDO*/
   overflow: hidden;
 }
 
-/* .projInfo .button{
-  left: 90%;
-  top: 65%;
-  top: 0;
-  position: relative;
-} */
-
-/* .techs{
-  background: red; 
-  display: inline-block;
-  position: relative;
-  margin-left: 8px;
-  left: 0;
-} */
 
 
 
