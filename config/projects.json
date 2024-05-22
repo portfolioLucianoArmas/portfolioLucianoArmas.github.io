@@ -26,7 +26,7 @@
   {
     "title" : "Anotador de Truco",
     "desc" : "Point scorer for the Truco game",
-    "img" : "anotadorTruco3.png",
+    "img" : "anotadorTruco.png",
     "link" : "https://anotadortruco.github.io",
     "linkGit" : "https://github.com/LucianoArmas/AnotadorTruco",
     "techUsed" : ["JS", "HTML", "CSS"]

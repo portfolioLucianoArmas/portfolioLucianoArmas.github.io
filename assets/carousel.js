@@ -1,16 +1,15 @@
-const projectsDir = './config/projects.json';
+const projectsDir = ("https://raw.githubusercontent.com/LucianoArmas/Portfolio/main/config/projects.json");
 const slider = document.querySelector(".swiper-wrapper");
 
 
 
-
-
 //Adds slides to the slider
-const projectsLoad = () =>{
-
+const projectsLoad = async () =>{
+  
   fetch(projectsDir)
     .then(response => response.json())
     .then(data =>{
+
       data.forEach(pro => {
       const slide = document.createElement("div");
       slide.classList.add("swiper-slide");
@@ -19,7 +18,7 @@ const projectsLoad = () =>{
       projInfo.classList.add("projInfo");
     
       const img = document.createElement("img");
-      img.setAttribute("src", `./imgs/${pro.img}`);
+      img.setAttribute("src", `./imgs/projects/${pro.img}`);
     
       const tit = document.createElement("h2");
       tit.innerHTML = pro.title;

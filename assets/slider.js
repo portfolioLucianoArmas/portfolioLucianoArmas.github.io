@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
 
 
   //Effect
@@ -16,6 +16,7 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    bulletElement:"swiper-slide",
   },
 
   // Navigation arrows
@@ -23,6 +24,7 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
 
   // And if we need scrollbar
   // scrollbar: {

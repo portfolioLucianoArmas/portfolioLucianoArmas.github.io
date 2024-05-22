@@ -527,25 +527,29 @@ body { /*FONDO*/
 
 
 .swiperBtn{
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-sides-offset: 15px;
   width: 30px;
   height: 45px;
-  border: 3px solid #315cfd;
+  color:rgba(255, 255, 255, 0.752);
   transition: all 0.3s;
   cursor: pointer;
-  background: white;
   font-size: 1em;
   font-weight: 550;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 
 .swiperBtn:hover{
-  background: #315cfd;
-  color: white;
+  color: #315cfd;
   font-size: 1.5em;
+}
+
+.swiper-pagination-bullet:hover{
+  background: #315cfd;
+  opacity: 1;
 }
 
 
