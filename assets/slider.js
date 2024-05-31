@@ -2,6 +2,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
+  allowTouchMove: false,
 
 
   //Effect
@@ -41,9 +42,9 @@ const swiper = new Swiper('.swiper', {
 
   //Allows you to slide in a touch screen
   freeMode:{
-    enabled:true,
+    enabled:false,
     sticky: true,
-    momentumVelocityRatio: 0.5,
+    momentumVelocityRatio: 0.02,
   },
 });
 

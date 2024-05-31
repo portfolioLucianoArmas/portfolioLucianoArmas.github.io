@@ -3,6 +3,10 @@ import {updateNavs} from "../assets/scriptUpdateNavs.js";
 import{disableSwiper} from "./slider.js";
 
 
+
+let swipeUp = "swipeup"
+let swipeDown = "swipedown"
+
 //Get the web´s perspective 
 const pers = document.querySelector(".perspective");
 
@@ -124,8 +128,9 @@ for(let i=0 ; i<snLis.length; i++){
 //Make the main content responsive:
 
 //-Using a touch screen (snapping)
-mainContent.get("swipe").set({direction: Hammer.DIRECTION_VERTICAL});
-mainContent.on("swipeup swipedown", (e)=>{
+// mainContent.get("swipe").set({direction: Hammer.DIRECTION_VERTICAL});
+mainContent.get("swipe").set({direction: Hammer.DIRECTION_ALL});
+mainContent.on("swipeup swipedown swipeleft swiperight", (e)=>{
   updateHelper(e);
 });
 
@@ -174,13 +179,13 @@ const updateHelper = (e) =>{
   let lastPos = (Array.from(snLis).length) - 1;
   let nextPos = 0;
 
-  if (e.type === "swipeup" || e.keyCode === 40 || e > 0){
+  if (e.type === swipeUp || e.keyCode === 40 || e > 0){
     if(curPos !== lastPos){
       nextPos = curPos + 1;
     } else if(curPos===0){
       nextPos = lastPos;
     }
-  } else if (e.type === "swipedown" || e.keyCode === 38 || e < 0){
+  } else if (e.type === swipeDown || e.keyCode === 38 || e < 0){
     if (curPos !== 0){
       nextPos = curPos - 1;
     }
@@ -195,6 +200,13 @@ const updateHelper = (e) =>{
 } 
 
 
+//Modifying the swipe navigation for mobile devices
+window.addEventListener("load", () =>{
+  if(window.innerWidth <= 1024 && window.innerHeight <= 1368){
+    swipeUp = "swiperight"
+    swipeDown = "swipeleft"
+  }
+})
 
 
 

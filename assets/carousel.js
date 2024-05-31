@@ -144,16 +144,12 @@ const projectsLoad = async () =>{
         projInfo.appendChild(descr);
         projInfo.appendChild(techWeb)
 
-        // projectsLoaded.push(img)
-        // projectsLoaded.push(projInfo)
         
         slide.appendChild(img)
         slide.appendChild(projInfo)
 
         projectsLoaded.push(slide)
         
-
-        // console.log(data.length)
         if((++contProj) == data.length){
           loadProjectsInSlide()
         }

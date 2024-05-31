@@ -117,11 +117,16 @@
   #viewport{
     height: 800px;
   }
-  
+
+
   .swiperBtn{
     opacity: .5;
     /* z-index: -10; */
   }
+
+
+
+
 }
 
 
