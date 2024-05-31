@@ -1,0 +1,160 @@
+
+@media (max-width: 1400px){
+  .infoMe{
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 1300px){
+  .intro--banner h1{
+    font-size: 50px;
+  }
+  .intro--banner p{
+    font-size: 22px;
+  }
+  
+  .intro--banner img {
+    width: 700px;
+    height: 350px;
+  }
+
+  .infoMe{
+    width: 60%;
+  }
+
+}
+
+
+@media (max-width: 1100px) {
+  .intro--banner h1{
+    font-size: 50px;
+  }
+  .intro--banner p{
+    font-size: 25px;
+  }
+  .intro--banner img {
+    width: 850px;
+  }
+
+
+  .btnTechWeb{
+    display: grid;
+    justify-content: center;
+  }
+  
+  .btnTechWeb .button{
+    justify-self: center;
+  }
+
+  .techs{
+    justify-content: space-between;
+  }
+
+  .techLogo{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .tooltip{
+    top: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+  .tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #0b798a transparent transparent transparent;
+    transform: translate(-50%, 360%);
+    -webkit-transform: translate(-50%, 360%);
+    -moz-transform: translate(-50%, 360%);
+    -ms-transform: translate(-50%, 360%);
+    -o-transform: translate(-50%, 360%);
+}
+
+  .techLogo:hover .tooltip,.btnLink:hover .tooltip {
+    top: 0;
+    transform: translate(-50%, -120%);
+    -webkit-transform: translate(-50%, -120%);
+    -moz-transform: translate(-50%, -120%);
+    -ms-transform: translate(-50%, -120%);
+    -o-transform: translate(-50%, -120%);
+}
+  
+}
+
+
+
+@media (max-width: 1024px) and (max-height: 1368px){
+  html{
+    rotate: 90deg;
+  }
+  
+  .perspective{
+    overflow: visible;
+    width: 1300px;
+    height: 800px;
+    left: 25%;
+  }
+
+  .perspective--modalview{
+    position: relative;
+  }
+
+  .container{
+    height: 800px;
+  }
+
+  #viewport{
+    height: 800px;
+  }
+  
+  .swiperBtn{
+    opacity: .5;
+    /* z-index: -10; */
+  }
+}
+
+
+/*ESTOS DOS DE ABAJO PERTENECEN A "NEST HUB" Y "NEST HUB MAX". NO HACE FALTA Q LOS DE VUELTA*/
+@media (width: 1024px) and (height: 600px){}
+@media (width: 1280px) and (height: 800px){}
+
+
+
+
+
+
+/* 
+@media (max-width: 920px){
+  
+  .intro--banner h1{
+    font-size: 45px;
+  }
+  .intro--banner p{
+    font-size: 22px;
+  }
+  
+  .intro--banner img {
+    width: 800px;
+    width: 80%;
+    height: 50%;
+  }
+
+  .swiperBtn{
+    opacity: 0;
+    z-index: -10;
+  }
+
+} */
+
+

@@ -48,6 +48,10 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+
+
+
+
 export const enableSwiper = ()=>{
   swiper.enable();
 }

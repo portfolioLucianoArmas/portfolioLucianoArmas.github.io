@@ -11,7 +11,7 @@
     "title" : "Cities Weather",
     "desc" : "Forecast website.",
     "img" : "citiesWeather.png",
-    "link" : "linkWeb",
+    "link" : "https://citiesweather.github.io",
     "linkGit" : "https://github.com/LucianoArmas/WeatherApp",
     "techUsed" : ["JS", "HTML", "CSS"]
   },
