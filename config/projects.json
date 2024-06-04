@@ -3,7 +3,7 @@
     "title" : "Antojos",
     "desc" : "Fast food e-commerce.",
     "img" : "antojos.png",
-    "link" : "linkWeb",
+    "link" : "https://github.com/LucianoArmas/Antojos",
     "linkGit" : "https://github.com/LucianoArmas/antojos",
     "techUsed" : ["springboot", "bootstrap", "mysql"]
   },
@@ -19,7 +19,7 @@
     "title" : "Leale Photos",
     "desc" : "Photo gallery.",
     "img" : "lealeFotografia.png",
-    "link" : "linkWeb",
+    "link" : "https://lealephotos.github.io",
     "linkGit" : "https://github.com/LucianoArmas/WebPhotos",
     "techUsed" : ["JS", "HTML", "CSS"]
   },
