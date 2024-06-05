@@ -3,7 +3,7 @@
     "title" : "Antojos",
     "desc" : "Fast food e-commerce.",
     "img" : "antojos.png",
-    "link" : "https://github.com/LucianoArmas/Antojos",
+    "link" : "https://antojos.onrender.com",
     "linkGit" : "https://github.com/LucianoArmas/antojos",
     "techUsed" : ["springboot", "bootstrap", "mysql"]
   },
