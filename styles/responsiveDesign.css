@@ -121,12 +121,14 @@
 
 @media (max-width: 1080px) and (max-height: 1920px) {
   /* Your styles for Motorola Moto G5 S Plus */
-  
+  /*GRAL*/
   .perspective{
     overflow: visible;
-    width: 1300px;
-    height: 800px;
-    left: 25%;
+    width: 800px;
+    height: 600px;
+    left: 7vh;
+    top: 5vh;
+    /* left: 25%; */
   }
 
   .perspective--modalview{
@@ -134,12 +136,90 @@
   }
 
   .container{
-    height: 800px;
+    height: 600px;
   }
 
   #viewport{
-    height: 800px;
+    height: 600px;
   }
+
+
+
+  /*SideNav*/
+  .side-nav li span, .side-nav li::before, .side-nav li.is-active{
+    font-size: 9px;
+  }
+
+
+  /*OuterNav*/
+  .outer-nav li span, .outer-nav li{
+    font-size: 18px;
+  }
+  .outer-nav li{
+    padding: 10px 0;
+  }
+
+  .outer-nav li::before{
+    height: 30px;
+  }
+
+  .outer-nav li.is-active::before{
+    outline: 5px solid #FF7B00;;
+  }
+
+
+  /*Projects*/
+  .projInfo{
+    height: 15vw;
+  }
+  .projInfo .title{
+    font-size: 16px;
+  }
+  .projInfo .description{
+    margin-top: 0;
+    font-size: 11px;
+  }
+  .btnTechWeb{
+    height: 60px;
+    margin-top: 0;
+  }
+  .techs{
+    margin-left: 0;
+    /* height: 1vh; */
+  }
+  .techLogo svg{
+    width: 1vh;
+  }
+  .btnTechWeb .button{
+    height: 2vh;
+  }
+
+
+
+  /*AboutMe*/
+  .intro--banner h1{
+    font-size: 40px;
+  }
+
+  .intro--banner p{
+    font-size: 20px;
+  }
+
+  #imgHome{
+    width: 25vh;
+    height: 20vw;
+  }
+
+  .aboutMe{
+    font-size: 11px;
+  }
+  .aboutMe p{
+    font-size: 13px;
+  }
+  .photoMe{
+    padding-left: 20px;
+  }
+
 }
 
 
