@@ -92,12 +92,35 @@
   
 }
 
-
-
-@media (max-width: 1024px) and (max-height: 1368px){
+@media (max-width: 1080px) and (max-height: 2400px) {
+  /* Your styles for Motorola */
   html{
     rotate: 90deg;
   }
+  
+  .perspective{
+    overflow: visible;
+    width: 2000px;
+    height:1000px;
+    left: 30vh;
+    top: 10vw;
+  }
+
+  .perspective--modalview{
+    position: relative;
+  }
+
+  .container{
+    height: 1000px;
+  }
+
+  #viewport{
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1080px) and (max-height: 1920px) {
+  /* Your styles for Motorola Moto G5 S Plus */
   
   .perspective{
     overflow: visible;
@@ -117,6 +140,31 @@
   #viewport{
     height: 800px;
   }
+}
+
+
+
+@media (max-width: 1024px) and (max-height: 1368px){
+    
+  .perspective{
+    overflow: visible;
+    width: 1100px;
+    height: 900px;
+    left: 24vh;
+    top: 5vh;
+  }
+
+  .perspective--modalview{
+    position: relative;
+  }
+
+  .container{
+    height: 900px;
+  }
+
+  #viewport{
+    height: 900px;
+  }
 
 
   .swiperBtn{
@@ -124,10 +172,36 @@
     /* z-index: -10; */
   }
 
+}
 
 
+
+@media (max-width: 720px) and (max-height: 1650px) {
+  /* Your styles for Xiaomi 10c */
+  
+  .perspective{
+    overflow: visible;
+    width: 1200px;
+    height: 700px;
+    left: 24vh;
+    top: 2vh;
+  }
+
+  .perspective--modalview{
+    position: relative;
+  }
+
+  .container{
+    height: 700px;
+  }
+
+  #viewport{
+    height: 700px;
+  }
+  
 
 }
+
 
 
 /*ESTOS DOS DE ABAJO PERTENECEN A "NEST HUB" Y "NEST HUB MAX". NO HACE FALTA Q LOS DE VUELTA*/
