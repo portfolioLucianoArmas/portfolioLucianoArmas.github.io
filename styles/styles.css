@@ -799,6 +799,9 @@ body { /*FONDO*/
   background: #0b798a; /*EL COLOR DEBERIA CAMBIAR SEGUN EL COLOR DEL LOGO
                           O TENDRIA QUE HACER UN COLOR UNICO?*/
   color: #fff;
+  display: grid;
+  align-content: center;
+  justify-content: center;
   padding: 10px;
   border-radius: 4px;
   transition: opacity 0.3s, visibility 0.3s, top 0.3s, background 0.3s;

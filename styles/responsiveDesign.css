@@ -124,8 +124,8 @@
   /*GRAL*/
   .perspective{
     overflow: visible;
-    width: 800px;
-    height: 600px;
+    width: 500px;
+    height: 300px;
     left: 7vh;
     top: 5vh;
     /* left: 25%; */
@@ -136,22 +136,38 @@
   }
 
   .container{
-    height: 600px;
+    height: 300px;
   }
 
   #viewport{
-    height: 600px;
+    height: 300px;
   }
 
 
 
   /*SideNav*/
+  .side-nav{
+    width: 45px;
+  }
   .side-nav li span, .side-nav li::before, .side-nav li.is-active{
-    font-size: 9px;
+    font-size: 7px;
+  }
+  .side-nav li.is-active::before{
+    left: -15px;
   }
 
 
   /*OuterNav*/
+  .header--nav-toggle{
+    width: 20px;
+    height: 20px;
+  }
+  .header--nav-toggle span{
+    width: 14px;
+  }
+  .header--nav-toggle::after, .header--nav-toggle::before{
+    width: 20px;
+  }
   .outer-nav li span, .outer-nav li{
     font-size: 18px;
   }
@@ -170,57 +186,162 @@
 
   /*Projects*/
   .projInfo{
-    height: 15vw;
+    height: 5vw;
   }
   .projInfo .title{
-    font-size: 16px;
+    margin-top: 0;
+    font-size: 10px;
   }
   .projInfo .description{
     margin-top: 0;
-    font-size: 11px;
+    font-size: 8px;
   }
   .btnTechWeb{
-    height: 60px;
+    height: 30px;
     margin-top: 0;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .techs{
     margin-left: 0;
     /* height: 1vh; */
   }
   .techLogo svg{
-    width: 1vh;
+    width: 0.8vh;
+  }
+  .techs .techLogo .tooltip{
+    /* font-size: 7px;
+    top: -1px; */
+    height: 10px;
+    width: 25px;
   }
   .btnTechWeb .button{
-    height: 2vh;
+    margin-bottom: 7px;
+    height: 1vh;
+    width: 3vh;
+    box-shadow: 2px 2px var(--main-color);
+  }  
+  .btnTechWeb .button .button__text{
+    font-size: 6.5px;
+    transform: translate(5px);
+    -webkit-transform: translate(5px);
+    -moz-transform: translate(5px);
+    -ms-transform: translate(5px);
+    -o-transform: translate(5px);
+  }
+  .btnTechWeb .button .button__icon{
+    width: 10px;
+    transform: translate(47px);
+    -webkit-transform: translate(47px);
+    -moz-transform: translate(47px);
+    -ms-transform: translate(47px);
+    -o-transform: translate(47px);
+  }
+  .button:hover .button__icon {
+    width: 62px;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: var(--swiper-pagination-bottom,-7px);
+  }
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    width: 5px;
+    height: 5px;
+  }
+  .swiperBtn{
+    width: 2px;
+    height: 0;
+    --swiper-navigation-size: 20px;
   }
 
 
 
   /*Home*/
   .intro--banner h1{
-    font-size: 40px;
-    color: violet;
+    font-size: 16px;
+    margin-top: 30px;
   }
 
   .intro--banner p{
-    font-size: 20px;
+    font-size: 11px;
   }
 
   #imgHome{
-    width: 25vh;
-    height: 20vw;
+    width: 12vh;
+    height: 10vw;
   }
 
 
   /*AboutMe*/
   .aboutMe{
-    font-size: 11px;
+    font-size: 8px;
+    width: 400px;
+    height: 200px;
   }
   .aboutMe p{
-    font-size: 13px;
+    font-size: 8px;
+  }
+  .about{
+    height: 8vh;
   }
   .photoMe{
-    padding-left: 20px;
+    padding-left: 0px;
+    width: 4vh;
+  }
+  .techLogo .tooltip{
+    transition: opacity 0.3s, top 0.3s, background 0.3s;
+    -webkit-transition: opacity 0.3s, top 0.3s, background 0.3s;
+    -moz-transition: opacity 0.3s, top 0.3s, background 0.3s;
+    -ms-transition: opacity 0.3s, top 0.3s, background 0.3s;
+    -o-transition: opacity 0.3s, top 0.3s, background 0.3s;
+}
+  .techLogo:hover .tooltip{
+    transform: translate(-50%, -35px);
+    -webkit-transform: translate(-50%, -35px);
+    -moz-transform: translate(-50%, -35px);
+    -ms-transform: translate(-50%, -35px);
+    -o-transform: translate(-50%, -35px);
+}
+  .techLogo:hover .tooltip, .btnLink:hover .tooltip{
+    font-size: 7px;
+    top: -1px;
+    height: 10px;
+    width: 25px;
+  }
+  .tooltip::before{
+    border-width: 6.8px;
+  }
+  .btnLogo{
+    width: 15px;
+    margin-top: 0;
+  }
+  .contact .button{
+    width: 70px;
+    height: 20px;
+    box-shadow: 2px 2px var(--main-color);
+  }
+  .button .button__text{
+    font-size: 7.5px;
+    transform: translate(8px);
+    -webkit-transform: translate(8px);
+    -moz-transform: translate(8px);
+    -ms-transform: translate(8px);
+    -o-transform: translate(8px);
+}
+  .button .button__icon{
+    width: 15px;
+    transform: translate(56px);
+    -webkit-transform: translate(56px);
+    -moz-transform: translate(56px);
+    -ms-transform: translate(56px);
+    -o-transform: translate(56px);
   }
 
 }
