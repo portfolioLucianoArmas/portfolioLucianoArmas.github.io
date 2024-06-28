@@ -92,6 +92,16 @@
   
 }
 
+@media (max-width: 375px) and (max-height: 812px){
+  /*Your styles for iPhone 12 Pro Max*/
+  body{
+    
+  }
+
+}
+
+
+
 @media (max-width: 1080px) and (max-height: 2400px) {
   /* Your styles for Motorola */
   html{
