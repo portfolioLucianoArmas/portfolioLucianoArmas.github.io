@@ -868,9 +868,62 @@
 }
 
 
+@media (max-width: 360px) and (max-height: 720px){
+  /*Moto G7 Play*/
+
+  /*GRAL*/
+  html{
+    rotate: 90deg;
+  }
+  
+  .perspective{
+    overflow: visible;
+    width: 600px;
+    height:300px;
+    top: -10px;
+    /* left: 7vh; */
+  }
+
+  .perspective--modalview{
+    position: relative;
+  }
+
+  .container{
+    width: 600px;
+    height:300px;
+  }
+
+  #viewport{
+    height:300px;
+    width: 600px;
+  }
+  
+}
+
+
 @media (max-width: 360px) and (max-height: 640px){
 /*Moto G5S Plus*/
+.perspective{
+  overflow: visible;
+  width: 600px;
+  height:300px;
+  top: -10px;
+  /* left: 7vh; */
+}
 
+.perspective--modalview{
+  position: relative;
+}
+
+.container{
+  width: 600px;
+  height:300px;
+}
+
+#viewport{
+  height:300px;
+  width: 600px;
+}
 
 }
 
